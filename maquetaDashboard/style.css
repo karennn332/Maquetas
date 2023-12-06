@@ -1,0 +1,83 @@
+:root{
+    --primary: rgb(248, 172, 114);
+    --light:#ffffff;
+    --grey:#efefef;
+}
+body{
+    overflow: scroll ;
+    font-family: 'Muli', sans-serif;
+    font-weight: 300;
+    color: var(--primary);
+}
+a:hover{
+   text-decoration: none;
+}
+.bg-primary { background-color: var(--primary) !important;}
+.bg-light{ background-color: var(--light);}
+.bg-mix {background: linear-gradient(180deg, var(--light) 50%, var(--grey)0);}
+.bg-grey{ background-color: var(--grey) !important;}
+
+#sidebar-container{
+    min-height: 100vh;
+}
+#sidebar-container .logo{
+    padding: .875rem 1.25rem;
+}
+#sidebar-container .menu{
+    width: 18rem;
+}
+
+.btn-search{
+    right: 5px;
+}
+
+.avatar{
+    max-width: 35px;
+}
+
+.content{
+    overflow-y: auto;
+    height: 100vh;
+    padding-bottom: 5rem;
+}
+
+
+
+.cardcredit {
+    position: relative;
+    display: flex;
+    width: 300px;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #347ff9;
+    background-clip: border-box;
+    border: 1px solid #23406f;
+    border-radius: 7px;
+  }
+  
+  .light {
+    color: #7d7979;
+    font-size: 11px;
+  }
+
+  .stat{
+    border-right: 1px var(--grey);
+  }
+
+  table {     font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 12px;    margin: 1px;     width: 200px; text-align: left;    border-collapse: collapse; }
+
+th {     font-size: 13px;     font-weight: normal;     padding: 6px;     background: #fedfb9;
+    border-top: 4px solid #fedeaa;    border-bottom: 1px solid #fff; color: rgb(153, 71, 0); }
+
+td {    padding: 18px;     background: #e8edff;     border-bottom: 1px solid #fff;
+    color: rgb(153, 125, 102);    border-top: 1px solid transparent; }
+
+tr:hover td { background: #fddcd0; color: rgb(153, 82, 51); }
+  
+@media (max-width: 764px){
+    #sidebar-container{
+        display: none;
+    }
+}
